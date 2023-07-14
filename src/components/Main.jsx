@@ -3,9 +3,12 @@ import { Routes, Route } from "react-router-dom";
 import { Navbar, Home, AboutMe, MyWork, Contact, Login, Admin } from "./";
 
 const Main = () => {
+
+    const loggedIn = localStorage.getItem("token");
+
     return(
         <div id="main">
-            <Navbar />
+            <Navbar loggedIn={ loggedIn } />
         <Routes>
             <Route exact path="/" element={ <Home /> } />
             <Route exact path="my-work" element={ <MyWork/> }  />

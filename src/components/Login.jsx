@@ -20,6 +20,7 @@ const Login = () => {
             setTimeout(() => {
                 alert("you've been logged in!!");
                 navigate("/");
+                location.reload();
             }, 3000);
         }
     }
