@@ -47,8 +47,32 @@ export const registerUserAPI = async(username, password) => {
         });
 
         const result = await response.json();
-        
+
         console.log(result, "result from registerAPI func!!");
+
+        return result;
+
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+}
+
+export const editInfoAPI = async(username, password, token) => {
+    try {
+        
+        const response = await fetch(`${URL}/api/users/edit-my-info`, {
+            method: "PATCH",
+            headers: makeHeaders(token),
+            body: JSON.stringify({
+                username: username,
+                password: password,
+            }),
+        });
+
+        const result = await response.json();
+
+        console.log(result, "result from editInfoAPI func!!!");
 
         return result;
 

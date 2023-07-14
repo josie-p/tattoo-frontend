@@ -6,6 +6,7 @@ const Main = () => {
 
     const loggedIn = localStorage.getItem("token");
     const token = localStorage.getItem("token");
+    const username = localStorage.getItem("username")
 
     return(
         <div id="main">
@@ -16,7 +17,7 @@ const Main = () => {
             <Route exact path="/about-me" element={ <AboutMe/> } />
             <Route exact path="/contact" element={ <Contact/> } />
             <Route exact path="/admin-login" element={ <Login/> } />
-            <Route exact path="/admin" element={ <Admin/> } />
+            <Route exact path="/admin" element={ <Admin username={ username } token={ token } /> } />
         </Routes>
         </div>
     )
