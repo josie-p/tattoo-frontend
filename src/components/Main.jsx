@@ -5,6 +5,7 @@ import { Navbar, Home, AboutMe, MyWork, Contact, Login, Admin } from "./";
 const Main = () => {
 
     const loggedIn = localStorage.getItem("token");
+    const token = localStorage.getItem("token");
 
     return(
         <div id="main">

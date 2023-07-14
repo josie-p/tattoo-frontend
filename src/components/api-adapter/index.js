@@ -31,3 +31,29 @@ export const loginUserAPI = async(username, password) => {
         throw error;
     }
 }
+
+export const registerUserAPI = async(username, password) => {
+    try {
+        
+        const response = await fetch(`${URL}/api/users/register`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                username: username,
+                password: password,
+            }),
+        });
+
+        const result = await response.json();
+        
+        console.log(result, "result from registerAPI func!!");
+
+        return result;
+
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+}
