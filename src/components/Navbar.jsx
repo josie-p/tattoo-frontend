@@ -21,6 +21,8 @@ const Navbar = ({ loggedIn }) => {
         loggedIn ? <p onClick={() => {
           localStorage.removeItem("token");
           localStorage.removeItem("username");
+          localStorage.removeItem("user");
+          navigate("/");
           location.reload();
         }} >logout</p> : null
       }

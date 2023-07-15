@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Register, EditInfo } from "./";
 import adminStyling from "./styling/adminStyling.css";
 
@@ -7,6 +8,9 @@ const Admin = ({ username, token }) => {
         <div>
 
             { username ? <h3>welcome back, {username}!!</h3> : null }
+            <div>
+                <Link to="edit-my-info">edit your user info!</Link>
+            </div>
 
             <h2>admin page!!!</h2>
             <div id="register" >
@@ -14,10 +18,10 @@ const Admin = ({ username, token }) => {
                 <Register/>
             </div>
 
-            <div id="edit-info">
+            {/* <div id="edit-info">
                 <h4>edit your information</h4>
                 <EditInfo token={ token } />
-            </div>
+            </div> */}
         </div>
     )
 }

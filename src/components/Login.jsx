@@ -17,6 +17,7 @@ const Login = () => {
         if (response?.success){
             localStorage.setItem("token", response.token);
             localStorage.setItem("username", username);
+            localStorage.setItem("user", JSON.stringify(response.user));
             setTimeout(() => {
                 alert("you've been logged in!!");
                 navigate("/");
