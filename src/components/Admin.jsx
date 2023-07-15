@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Register, EditInfo } from "./";
+import { Register, EditInfo, UserList } from "./";
 import adminStyling from "./styling/adminStyling.css";
 
-const Admin = ({ username, token }) => {
+const Admin = ({ username, token, allUsers }) => {
     return(
         <div>
 
@@ -16,6 +16,10 @@ const Admin = ({ username, token }) => {
             <div id="register" >
                 <h4>register a user!</h4>
                 <Register/>
+            </div>
+
+            <div>
+                <UserList allUsers={ allUsers } />
             </div>
 
             {/* <div id="edit-info">

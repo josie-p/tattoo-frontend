@@ -81,3 +81,24 @@ export const editInfoAPI = async(username, password, token) => {
         throw error;
     }
 }
+
+export const getAllUsersAPI = async() => {
+    try {
+        
+        const response = await fetch(`${URL}/api/users/all`, {
+            method:"GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+
+        const result = await response.json();
+        console.log(result, "result from all users api call");
+
+        return result;
+
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+}

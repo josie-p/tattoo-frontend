@@ -9,3 +9,5 @@ export { default as MyWork } from "./MyWork";
 export { default as Navbar } from "./Navbar";
 export { default as Register } from "./Register";
 export { default as UploadImages } from "./UploadImages";
+export { default as UserCard } from "./UserCard"
+export { default as UserList } from "./UserList";
