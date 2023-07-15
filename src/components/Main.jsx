@@ -18,7 +18,7 @@ const Main = () => {
             <Route exact path="/contact" element={ <Contact/> } />
             <Route exact path="/admin-login" element={ <Login/> } />
             <Route exact path="/admin" element={ <Admin username={ username } token={ token } /> } />
-            <Route exact path="admin/edit-my-info" element={< EditInfo />} />
+            <Route exact path="admin/edit-my-info" element={< EditInfo token={ token } username={ username } />} />
         </Routes>
         </div>
     )
