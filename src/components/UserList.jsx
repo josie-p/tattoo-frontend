@@ -1,15 +1,15 @@
 import React from "react";
 import { UserCard } from "./";
 
-const UserList = ({ allUsers }) => {
+const UserList = ({ allUsers, token }) => {
     return(
         <div>
             <p>user list!</p>
                 {
                     allUsers.map((user, idx) => {
                         return(
-                            <div>
-                                <UserCard user={ user } key={ `${idx} - user list map` } />
+                            <div key={ `${idx} - user list map` } >
+                                <UserCard token={ token } user={ user }  />
                             </div>
                         )
                     })

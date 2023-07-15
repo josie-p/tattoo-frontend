@@ -9,7 +9,7 @@ const Admin = ({ username, token, allUsers }) => {
 
             { username ? <h3>welcome back, {username}!!</h3> : null }
             <div>
-                <Link to="edit-my-info">edit your user info!</Link>
+                <Link to="edit-my-info">your account!!</Link>
             </div>
 
             <h2>admin page!!!</h2>
@@ -19,7 +19,7 @@ const Admin = ({ username, token, allUsers }) => {
             </div>
 
             <div>
-                <UserList allUsers={ allUsers } />
+                <UserList allUsers={ allUsers } token={token} />
             </div>
 
             {/* <div id="edit-info">

@@ -102,3 +102,20 @@ export const getAllUsersAPI = async() => {
         throw error;
     }
 }
+
+export const deleteUserAPI = async(token, userId) => {
+    try {
+        const response = await fetch(`${URL}/api/users/delete-user/${userId}`, {
+            method: "DELETE",
+            headers: makeHeaders(token),       
+        });
+
+        const result = await response.json();
+
+        console.log(result, "result from delete user api call");
+        return result;
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+}
