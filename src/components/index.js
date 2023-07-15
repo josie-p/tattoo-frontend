@@ -1,4 +1,5 @@
 export { default as AboutMe } from "./AboutMe";
+export { default as AddPhotos } from "./AddPhotos";
 export { default as Admin } from "./Admin";
 export { default as Contact } from "./Contact";
 export { default as EditInfo } from "./EditInfo";

@@ -3,3 +3,15 @@
     margin: 10px;
     padding: 10px;
 }
+
+.user-in-list{
+    border: solid greenyellow 3px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.my-work-img{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}

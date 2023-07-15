@@ -8,7 +8,7 @@ const UserList = ({ allUsers, token }) => {
                 {
                     allUsers.map((user, idx) => {
                         return(
-                            <div key={ `${idx} - user list map` } >
+                            <div className="user-in-list" key={ `${idx} - user list map` } >
                                 <UserCard token={ token } user={ user }  />
                             </div>
                         )

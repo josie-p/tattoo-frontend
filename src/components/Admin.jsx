@@ -26,6 +26,9 @@ const Admin = ({ username, token, allUsers }) => {
                 <h4>edit your information</h4>
                 <EditInfo token={ token } />
             </div> */}
+            <div>
+                <p>add photos to your work!</p>
+            </div>
         </div>
     )
 }
