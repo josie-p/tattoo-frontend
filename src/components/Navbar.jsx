@@ -13,7 +13,8 @@ const Navbar = ({ loggedIn }) => {
       <Link to="/my-work">my work</Link>
       <Link to="/about-me">about me</Link>
       <Link to="/contact">contact me</Link>
-      <Link to="/admin-login">login</Link>
+      { loggedIn ? null : <Link to="/admin-login">login</Link> }
+      {/* <Link to="/admin-login">login</Link> */}
       {
        loggedIn ? <Link to="/admin">admin dash</Link> : null
       }
