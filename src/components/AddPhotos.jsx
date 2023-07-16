@@ -32,9 +32,6 @@ const AddPhotos = () => {
                 uploadHelper();
             }} >upload image</button>
 
-            {/* {imageList.map((url) => {
-                return <img src={url} />
-            })} */}
 
         </div>
     )
