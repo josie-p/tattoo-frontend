@@ -119,3 +119,21 @@ export const deleteUserAPI = async(token, userId) => {
         throw error;
     }
 }
+
+export const deleteMeAPI = async(token) => {
+    try {
+        
+        const response = await fetch(`${URL}/api/users/delete-me`, {
+            method: "DELETE",
+            headers: makeHeaders(token),
+        });
+
+        const result = await response.json();
+
+        console.log(result, "result from delete me api call");
+
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+}

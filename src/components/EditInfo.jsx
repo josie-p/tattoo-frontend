@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { editInfoAPI } from "./api-adapter";
+import { editInfoAPI, deleteMeAPI } from "./api-adapter";
 
 const EditInfo = ({ token, username }) => {
 
@@ -12,6 +12,22 @@ const EditInfo = ({ token, username }) => {
 
         if(response.success){
             console.log(response, "successful response from edit info!!");
+        }
+    }
+
+    const deleteAccount = async() => {
+        const response = await deleteMeAPI(token);
+
+        if(response.success){
+            alert("your account was successfully deleted");
+
+            setTimeout(() => {
+            localStorage.removeItem("token");
+            localStorage.removeItem("username");
+            localStorage.removeItem("user");
+            navigate("/");
+            location.reload();
+            }, 2000)
         }
     }
 
@@ -40,6 +56,13 @@ return(
             }} ></input>
             <button type="submit">edit your info!</button>
         </form>
+        </div>
+        <div id="delete-account" >
+            <button onClick={() => {
+                if(confirm("are you sure you want to delete your account")){
+                    deleteAccount();
+                }
+            }} >delete your account</button>
         </div>
     
     </div>
