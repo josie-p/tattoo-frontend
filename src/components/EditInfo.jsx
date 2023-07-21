@@ -35,9 +35,16 @@ const EditInfo = ({ token, username }) => {
 
 return(
     <div>
+
         <div id="your-info" >
             {/* <h3>username:</h3> */}
             <p> hi { username }!</p>
+        </div>
+
+        <div className="go-back">
+            <p onClick={() => {
+                navigate("/admin");
+            }} > &#8592; go back to admin </p>
         </div>
 
         <div id="edit-form-div">

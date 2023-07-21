@@ -10,14 +10,33 @@
     padding: 10px;
 }
 
-.my-work-img{
+/* .my-work-img{
     width: 150px;
     height: 150px;
     margin: 10px;
+} */
+
+.go-back{
+    background-color: cadetblue;
+    padding: 10px;
+    margin: 10px;
+    width: 5rem;
 }
 
 #add-photos-div{
     padding: 10px;
     margin: 10px;
     border: solid blueviolet 3px;
+}
+
+#edit-form-div{
+    padding: 10px;
+    margin: 10px;
+    border: solid yellow 3px;
+}
+
+#delete-account{
+    padding: 10px;
+    margin: 10px;
+    border: solid blue 3px;
 }
