@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { editInfoAPI, deleteMeAPI } from "./api-adapter";
 
 const EditInfo = ({ token, username }) => {
 
     const [ newUsername, setNewUsername ] = useState("");
     const [ newPassword, setNewPassword ] = useState("");
-    // const localUser = localStorage.getItem("user");
+    const navigate = useNavigate();
 
     const editInfo = async() => {
         const response = await editInfoAPI(newUsername, newPassword, token);
@@ -30,6 +31,7 @@ const EditInfo = ({ token, username }) => {
             }, 2000)
         }
     }
+
 
 return(
     <div>

@@ -132,6 +132,8 @@ export const deleteMeAPI = async(token) => {
 
         console.log(result, "result from delete me api call");
 
+        return result;
+
     } catch (error) {
         console.error(error);
         throw error;
