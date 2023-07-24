@@ -14,6 +14,8 @@ const Register = () => {
         //add success and error messages here!
         if(response.success){
             console.log("you have successfully registered a user!");
+            alert("you successfully registered a user!");
+            location.reload();
         }
 
     }

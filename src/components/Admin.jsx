@@ -23,9 +23,14 @@ const Admin = ({ username, token, allUsers }) => {
                 < AddPhotos />
             </div>
 
-            <div>
-                <UserList allUsers={ allUsers } token={token} />
-            </div>
+{
+    username === "joann-w" || username === "josie-p" ? <div>
+    <UserList allUsers={ allUsers } token={token} />
+</div> : null
+}
+            {/* // <div>
+            //     <UserList allUsers={ allUsers } token={token} />
+            // </div> */}
 
             {/* <div id="edit-info">
                 <h4>edit your information</h4>
