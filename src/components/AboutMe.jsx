@@ -1,12 +1,11 @@
 import React from "react";
-import joPic from "./images/jo-pic.jpg";
+import joPic from "./images/about-me-pic.png";
 
 const AboutMe = () => {
   return (
     <div id="about-me">
       <h2>about me!</h2>
-      <img src={joPic} alt="picture of jo" height="100px" width="100px" />
-      <p>reach me through <a href="mailto:joann.woods.23@gmail.com?subject=Contact Joann!">email</a></p>
+      <img id="about-me-jo-pic" src={joPic} alt="picture of jo" height="350px" width="350px" />
 
       <p>
         Shaman banjo farm-to-table, mustache tumblr bespoke bodega boys bicycle

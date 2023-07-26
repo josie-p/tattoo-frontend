@@ -1,3 +1,10 @@
 #about-me{
     /* background-color: pink; */
+
+}
+
+#about-me-jo-pic{
+    border: dashed 4px pink;
+    border-radius: 35px;
+   /* margin: auto auto; */
 }
