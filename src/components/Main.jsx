@@ -4,6 +4,7 @@ import { Navbar, Home, AboutMe, MyWork, Contact, Login, Admin, Register, EditInf
 import { getAllUsersAPI } from "./api-adapter";
 
 import myWorkStyling from "./styling/myWorkStyling.css";
+import aboutMeStyling from "./styling/aboutMeStyling.css";
 
 
 const Main = () => {
