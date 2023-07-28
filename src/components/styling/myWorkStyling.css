@@ -2,8 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    flex-direction: row;
+    /* flex-direction: column; */
     justify-content: center;
+    width: 60%;
+    margin: auto;
 }
 
 .my-work-img{

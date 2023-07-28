@@ -1,4 +1,52 @@
-#navbar > a{
-    background-color: yellow;
-    margin: 10px;
+/*
+
+color palette:
+off-white - #f7f0df
+dark blush - #EA9688
+light pink - #F9CDCC
+orange - #F65035
+dark green - #27513E
+light green - #C2F1DC
+yellow - #FFCD64
+light blue - #868FD6
+dark blue - #3845AD
+
+*/
+
+#navbar > a, #navbar > p {
+  color: #3845ad;
+  text-decoration: none;
+  border-bottom: solid 3px #3845ad;
+  padding: 0.5%;
+  width: max-content;
+  margin: 10px;
+  font-weight: 600;
+  font-family: "Sen", sans-serif;
+  text-shadow: 2px 2px 2px #f9cdcc;
+  font-size: 1.2rem;
+  transition: ease-in;
+  transition-duration: 0.3s;
+}
+
+#navbar > p{
+    cursor: default;
+}
+
+#navbar > a:hover, #navbar > p:hover {
+  transition: ease-in;
+  transition-duration: 0.3s;
+  /* color: #F65035; */
+  /* color: #868FD6; */
+  border-bottom: solid 3px #F65035;
+  text-shadow: 2px 2px 4px #ea9688;
+}
+
+/* #navbar > a:focus{
+    border-bottom: dashed 3px #F65035;
+} */
+
+#navbar {
+  background-color: #d9ddfd;
+  /* background-color: #C2F1DC; */
+  border-bottom: 1px solid rgb(56, 69, 173, 0.7);
 }

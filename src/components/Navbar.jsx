@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import navStyling from "./styling/navStyling.css"
-import logo from "./images/logo-nav.png";
+import logo from "./images/favicon-2.png";
 
 const Navbar = ({ loggedIn }) => {
 
@@ -9,7 +9,7 @@ const Navbar = ({ loggedIn }) => {
 
   return (
     <div id="navbar">
-      <img src={logo} width="85px" height="85px" />
+      <img src={logo} width="90px" height="90px" />
       <Link to="/">home</Link>
       <Link to="/my-work">my work</Link>
       <Link to="/about-me">about me</Link>

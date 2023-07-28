@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div id="about-me">
       <h2>about me!</h2>
-      <img id="about-me-jo-pic" src={joPic} alt="picture of jo" height="350px" width="350px" />
+      {/* <img id="about-me-jo-pic" src={joPic} alt="picture of jo" height="350px" width="350px" /> */}
 
       <p>
         Shaman banjo farm-to-table, mustache tumblr bespoke bodega boys bicycle
