@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { loginUserAPI } from "./api-adapter";
 
+import loginStyling from "./styling/loginStyling.css";
+
 const Login = () => {
     const navigate = useNavigate();
 
@@ -27,22 +29,24 @@ const Login = () => {
     }
 
     return (
-        <div>
-            <h2>login page!</h2>
-            <form onSubmit={(e) => {
-                e.preventDefault();
-                loginUser(username, password);
-            }} >
-                <label>username:</label>
-                <input type="text" onChange={(e) => {
-                    setUsername(e.target.value);
-                }} />
-                <label>password:</label>
-                <input type="password" onChange={(e) => {
-                    setPassword(e.target.value);
-                }}  />
-                <button type="submit">login</button>
-            </form>
+        <div id="login-page">
+            <h2>login to your admin account!</h2>
+            <div id="login-form">
+                <form onSubmit={(e) => {
+                    e.preventDefault();
+                    loginUser(username, password);
+                }} >
+                    <label>username:</label>
+                    <input type="text" onChange={(e) => {
+                        setUsername(e.target.value);
+                    }} />
+                    <label>password:</label>
+                    <input type="password" onChange={(e) => {
+                        setPassword(e.target.value);
+                    }}  />
+                    <button type="submit">login</button>
+                </form>
+            </div>
         </div>
     )
 }

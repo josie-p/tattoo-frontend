@@ -1,3 +1,19 @@
+/*
+
+color palette:
+off-white - #f7f0df
+dark blush - #EA9688
+light pink - #F9CDCC
+orange - #F65035
+dark green - #27513E
+light green - #C2F1DC
+yellow - #FFCD64
+light blue - #868FD6
+lighter blue - #d9ddfd
+dark blue - #3845AD
+
+*/
+
 #home-page{
     display: flex;
     flex-direction: column;
@@ -6,6 +22,14 @@
     background-color: #d9ddfd;
     width: 100vw;
     height: 100vh;
+}
+
+#home-h3{
+    font-family: 'Sen', sans-serif;
+    color: #3845AD;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-bottom: 3px dashed #3845AD;
 }
 
 #home-logo{
