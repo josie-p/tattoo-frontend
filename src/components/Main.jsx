@@ -5,6 +5,7 @@ import { getAllUsersAPI } from "./api-adapter";
 
 import myWorkStyling from "./styling/myWorkStyling.css";
 import aboutMeStyling from "./styling/aboutMeStyling.css";
+import homeStyling from "./styling/homeStyling.css";
 
 
 const Main = () => {

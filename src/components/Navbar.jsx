@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import navStyling from "./styling/navStyling.css"
+import logo from "./images/logo-nav.png";
 
 const Navbar = ({ loggedIn }) => {
 
@@ -8,13 +9,12 @@ const Navbar = ({ loggedIn }) => {
 
   return (
     <div id="navbar">
-      <h2>joann woods</h2>
+      <img src={logo} width="85px" height="85px" />
       <Link to="/">home</Link>
       <Link to="/my-work">my work</Link>
       <Link to="/about-me">about me</Link>
       <Link to="/contact">contact me</Link>
       { loggedIn ? null : <Link to="/admin-login">login</Link> }
-      {/* <Link to="/admin-login">login</Link> */}
       {
        loggedIn ? <Link to="/admin">admin dash</Link> : null
       }
