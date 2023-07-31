@@ -30,7 +30,7 @@ dark blue - #3845AD
     text-shadow: 2px 2px 3px #F9CDCC;
 }
 
-form{
+#login-form > form{
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -5,16 +5,16 @@ import adminStyling from "./styling/adminStyling.css";
 
 const Admin = ({ username, token, allUsers }) => {
     return(
-        <div>
+        <div id="admin-page" >
 
-            { username ? <h3>welcome back, {username}!!</h3> : null }
+            { username ? <h3 id="admin-welcome" >welcome back, {username}!!</h3> : null }
             <div>
                 <Link to="edit-my-info">your account!!</Link>
             </div>
 
             <h2>admin page!!!</h2>
             <div id="register" >
-                <h4>register a user!</h4>
+                <h4>sign up a new admin user here!</h4>
                 <Register/>
             </div>
             

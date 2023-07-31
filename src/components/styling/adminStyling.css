@@ -1,9 +1,46 @@
-#register, #edit-info{
+/*
+
+color palette:
+off-white - #f7f0df
+dark blush - #EA9688
+light pink - #F9CDCC
+orange - #F65035
+dark green - #27513E
+light green - #C2F1DC
+yellow - #FFCD64
+light blue - #868FD6
+lighter blue - #d9ddfd
+dark blue - #3845AD
+
+*/
+
+
+/* styling for the whole admin page div and the your edit info page */
+#admin-page, #your-info-edit-page{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;
+    background-color: #d9ddfd;
+}
+
+/* specific rule for your edit info */
+#your-info-edit-page{
+    padding-bottom: 8rem;
+}
+
+/* styling for the register, edit info, and edit form div  */
+#register, #edit-info, #edit-form-div{
     border: solid pink 3px;
     margin: 10px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* styling for user cards */
 .user-in-list{
     border: solid greenyellow 3px;
     margin: 10px;
@@ -16,27 +53,151 @@
     margin: 10px;
 } */
 
-.go-back{
-    background-color: cadetblue;
-    padding: 10px;
-    margin: 10px;
-    width: 5rem;
-}
 
+/* styling for add photos div */
 #add-photos-div{
     padding: 10px;
     margin: 10px;
     border: solid blueviolet 3px;
 }
 
+/* styling for welcome message in your info in admin */
+#your-info{
+    /* align-items: center; */
+    margin: auto;
+    font-family: 'Sen', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #3845AD;
+    text-decoration: 3px underline #F65035;
+}
+
+/* styling for exit button in edit your info */
+#exit{
+    background-color: #3845AD;
+    border-radius: 35px;
+    /* padding: 6px; */
+    padding-right: 6px;
+    padding-left: 6px;
+    margin: 5px;
+    width: max-content;
+    font-family: 'Sen', sans-serif;
+    font-weight: 600;
+    color: #d9ddfd; 
+    border: solid 2px #3845AD;
+    transition: ease-in;
+    transition-duration: 0.3s;
+}
+
+/* styling for exit button in edit your info on hover */
+#exit:hover{
+    color: #3845AD;
+    background-color: #d9ddfd;
+    transition: ease-in;
+    transition-duration: 0.3s;
+    text-decoration: underline 3px #F65035;
+}
+
+/* styling for edit form div */
 #edit-form-div{
     padding: 10px;
     margin: 10px;
     border: solid yellow 3px;
 }
 
-#delete-account{
+/* styling for register form and edit form divs */
+#register-form, #edit-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* styling for user and edit form div h4s */
+#register > h4, #edit-form-div > h4{
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #3845AD;
+    border-bottom: 3px solid #F65035;
+    font-size: 1.5rem;
+}
+
+/* styling for register form and edit form labels */
+#register-form > label, #edit-form > label{
+    font-family: 'Sen', sans-serif;
+    font-weight: 600;
+    color: #3845AD;
+    font-size: 1.2rem;
+    
+}
+
+/* styling for register form and edit form inputs */
+#register-form > input, #edit-form > input{
+    padding: 0.7rem;
+    margin: 1rem;
+    background-color: #F9CDCC;
+    border: solid 3px #3845AD;
+    border-radius: 35px;
+    font-family: 'Sen', sans-serif;
+    color: #3845AD;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* styling for register form and edit form buttons */
+#register-form > button, #edit-form > button{
+    border: none;
+    margin: 0.7rem;
+    padding: 0.7rem;
+    background-color: #3845AD;
+    color: #F9CDCC;
+    border: 3px solid #3845AD;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 35px;
+    transition: ease-in;
+    transition-duration: 0.3s;
+}
+
+/* styling for register form and edit form buttons on hover */
+#register-form > button:hover, #edit-form > button:hover{
+    background-color: #F9CDCC;
+    color:  #3845AD;
+    transition: ease-in;
+    transition-duration: 0.3s;
+}
+
+/* styling for delete account div */
+#delete-my-account{
     padding: 10px;
     margin: 10px;
     border: solid blue 3px;
 }
+
+/* styling for delete account button */
+#delete-my-account > button{
+    background-color: #3845AD;
+    border-radius: 35px;
+    padding: 1rem;
+    margin: 5px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #d9ddfd;
+    border: solid 2px #3845AD;
+    transition: ease-in;
+    transition-duration: 0.3s;
+}
+
+/* styling for delete account button on hover */
+#delete-my-account > button:hover{
+    color: #3845AD;
+    background-color: #d9ddfd;
+    text-decoration: underline 3px #F65035;
+    transition: ease-in;
+    transition-duration: 0.3s;
+}
+
+
+

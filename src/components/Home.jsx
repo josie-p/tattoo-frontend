@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div id="home-page">
             {/* <h1>home page!</h1> */}
-            <img id="home-logo" src={logo} height="600px" width="650px" alt="home logo" />
+            <img id="home-logo" src={logo} height="600px" width="650px" alt="logo with a tattoo machine and text that says 'Joann Woods Ink'" />
 
             <div id="home-h3">
                 <h3>tattoo apprentice based in norman, ok!</h3>

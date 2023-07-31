@@ -21,8 +21,8 @@ const Register = () => {
     }
 
     return(
-        <div>
-            <form onSubmit={(e) => {
+        <div id="register-user">
+            <form id="register-form" onSubmit={(e) => {
                 e.preventDefault();
                 registerUser();
             }} >

@@ -34,24 +34,19 @@ const EditInfo = ({ token, username }) => {
 
 
 return(
-    <div>
+    <div id="your-info-edit-page" >
 
         <div id="your-info" >
             {/* <h3>username:</h3> */}
             <p> hi { username }!</p>
         </div>
 
-        <div className="go-back">
-            <p onClick={() => {
-                navigate("/admin");
-            }} > &#8592; go back to admin </p>
-        </div>
 
         <div id="edit-form-div">
-            <h3>
+            <h4>
                 edit your information! enter a new username or password.
-            </h3>
-        <form onSubmit={(e) => {
+            </h4>
+        <form id="edit-form" onSubmit={(e) => {
             e.preventDefault();
             editInfo();
         }}>
@@ -66,12 +61,17 @@ return(
             <button type="submit">edit your info!</button>
         </form>
         </div>
-        <div id="delete-account" >
+        <div id="delete-my-account" >
             <button onClick={() => {
                 if(confirm("are you sure you want to delete your account")){
                     deleteAccount();
                 }
             }} >delete your account</button>
+        </div>
+        <div id="exit" onClick={() => {
+                navigate("/admin");
+            }} >
+            <p> &#8592; go back to admin </p>
         </div>
     
     </div>
