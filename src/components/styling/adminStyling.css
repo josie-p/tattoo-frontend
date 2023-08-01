@@ -14,6 +14,76 @@ dark blue - #3845AD
 
 */
 
+#your-account{
+    background-color: #3845AD;
+    color: #d9ddfd;
+    font-family: 'Sen', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 3px solid #3845AD;
+    border-radius: 35px;
+    width: max-content;
+    padding: 1rem;
+    text-decoration: none;
+    transition: ease-in;
+    transition-duration: 0.3s;
+    margin-bottom: 1rem;
+}
+
+#your-account:hover{
+    background-color: #d9ddfd;
+    color: #3845AD;
+    text-decoration: 3px underline #F65035;
+    transition: ease-in;
+    transition-duration: 0.3s;
+}
+
+/* upload images section styling */
+/* styling for add photos div */
+#add-photos-div{
+    padding: 10px;
+    margin: 10px;
+    border-bottom: solid #3845AD 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 50%; */
+}
+
+#upload-photos{
+    margin-bottom:  2rem;
+    /* width: 40%; */
+}
+
+#upload-photos > input[type="file"]{
+    padding-bottom: 1rem;
+    font-family: 'Sen', sans-serif;
+    font-family: 500;
+    font-size: 1rem;
+    color: #3845AD;
+}
+
+#upload-photos > input::file-selector-button, #upload-image-button{
+    background-color: #3845AD;
+    color: #F9CDCC;
+    font-family: 'Sen', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.7rem;
+    border-radius: 35px;
+    border: 3px solid #3845AD;
+    transition: ease-in;
+    transition-duration: 0.3s;
+}
+
+#upload-photos > input::file-selector-button:hover, #upload-image-button:hover{
+    background-color: #F9CDCC;
+    color: #3845AD;
+    transition: ease-in;
+    transition-duration: 0.3s;
+}
+
+
 
 /* styling for the whole admin page div and the your edit info page */
 #admin-page, #your-info-edit-page{
@@ -32,7 +102,8 @@ dark blue - #3845AD
 
 /* styling for the register, edit info, and edit form div  */
 #register, #edit-info, #edit-form-div{
-    border: solid pink 3px;
+    /* border: solid pink 3px; */
+    border-bottom: 1px solid #3845AD;
     margin: 10px;
     padding: 10px;
     display: flex;
@@ -47,29 +118,19 @@ dark blue - #3845AD
     padding: 10px;
 }
 
-/* .my-work-img{
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-} */
-
-
-/* styling for add photos div */
-#add-photos-div{
-    padding: 10px;
-    margin: 10px;
-    border: solid blueviolet 3px;
-}
 
 /* styling for welcome message in your info in admin */
 #your-info{
     /* align-items: center; */
-    margin: auto;
+    /* margin: auto; */
+    margin:1rem;
     font-family: 'Sen', sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
     color: #3845AD;
     text-decoration: 3px underline #F65035;
+    animation: shakeX;
+    animation-duration: 2s;
 }
 
 /* styling for exit button in edit your info */
@@ -77,14 +138,17 @@ dark blue - #3845AD
     background-color: #3845AD;
     border-radius: 35px;
     /* padding: 6px; */
-    padding-right: 6px;
+    padding-right: 8px;
     padding-left: 6px;
-    margin: 5px;
+    margin: 1rem;
     width: max-content;
     font-family: 'Sen', sans-serif;
     font-weight: 600;
     color: #d9ddfd; 
     border: solid 2px #3845AD;
+    animation: shakeX;
+    animation-delay: 2s;
+    animation-duration: 2s;
     transition: ease-in;
     transition-duration: 0.3s;
 }
@@ -102,7 +166,6 @@ dark blue - #3845AD
 #edit-form-div{
     padding: 10px;
     margin: 10px;
-    border: solid yellow 3px;
 }
 
 /* styling for register form and edit form divs */
@@ -110,16 +173,18 @@ dark blue - #3845AD
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 /* styling for user and edit form div h4s */
-#register > h4, #edit-form-div > h4{
+#register > h4, #edit-form-div > h4, #upload-photos > h4{
     font-family: 'Sen', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
     color: #3845AD;
     border-bottom: 3px solid #F65035;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 /* styling for register form and edit form labels */
@@ -172,15 +237,16 @@ dark blue - #3845AD
 #delete-my-account{
     padding: 10px;
     margin: 10px;
-    border: solid blue 3px;
+    display: flex;
 }
 
 /* styling for delete account button */
 #delete-my-account > button{
+    align-items: center;
     background-color: #3845AD;
     border-radius: 35px;
     padding: 1rem;
-    margin: 5px;
+    margin: auto;
     font-family: 'Sen', sans-serif;
     font-weight: 600;
     font-size: 1rem;
@@ -197,6 +263,31 @@ dark blue - #3845AD
     text-decoration: underline 3px #F65035;
     transition: ease-in;
     transition-duration: 0.3s;
+}
+
+#open-admin{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%;
+    margin-left: 1rem;
+    /* margin: 4rem 1rem 2rem 1rem; */
+    /* border: 1px solid #3845AD; */
+}
+
+#admin-welcome{
+    margin-bottom: 50px;
+    /* background-color: #F65035; */
+    width: max-content;
+    font-family: 'Sen', sans-serif;
+    font-weight: 600;
+    color: #3845AD;
+    animation: zoomIn;
+    animation-duration: 2s;
+}
+
+#greeting-username{
+    border-bottom: 3px dashed #F65035;
 }
 
 

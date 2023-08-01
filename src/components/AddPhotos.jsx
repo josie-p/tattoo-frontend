@@ -16,21 +16,22 @@ const AddPhotos = () => {
 
         uploadBytes(imageRef, imageUpload).then(() => {
             alert("Image Uploaded");
+            location.reload();
         })
         
     }
 
     return(
-        <div>
-            <p>add the pics</p>
+        <div id="upload-photos">
+            <h4>upload photos of your work!</h4>
 
             <input id="image_input" type="file" accept="image/png, image/jpeg" onChange={(event) => {
                 setImageUpload(event.target.files[0]);
             }} />
 
-            <button onClick={() => {
+            <button id="upload-image-button" onClick={() => {
                 uploadHelper();
-            }} >upload image</button>
+            }} >Upload Image</button>
 
 
         </div>

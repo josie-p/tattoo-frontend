@@ -20,10 +20,10 @@ const UserCard = ({ user, token }) => {
         <div id={`user${user.id}`}>
             <h3>username</h3>
             <p>{ user.username }</p>
-            <h3>
+            {/* <h3>
                 password
             </h3>
-<p>{ user.password } </p>
+<p>{ user.password } </p> */}
 <button onClick={() => {
     // if(localStorage.getItem("username") === "joann-w") {
     //     if(confirm("are you sure you wanna delete?")){

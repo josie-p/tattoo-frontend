@@ -7,20 +7,19 @@ const Admin = ({ username, token, allUsers }) => {
     return(
         <div id="admin-page" >
 
-            { username ? <h3 id="admin-welcome" >welcome back, {username}!!</h3> : null }
-            <div>
-                <Link to="edit-my-info">your account!!</Link>
-            </div>
-
-            <h2>admin page!!!</h2>
-            <div id="register" >
-                <h4>sign up a new admin user here!</h4>
-                <Register/>
+            <div id="open-admin" >
+            { username ? <h2 id="admin-welcome" >welcome back, <span id="greeting-username" >{username}</span>!</h2> : null }
+                <Link id="your-account" to="edit-my-info">your account!!</Link>
             </div>
             
             <div id="add-photos-div">
-                <p>add photos to your work!</p>
+                {/* <p>add photos to your work!</p> */}
                 < AddPhotos />
+            </div>
+
+            <div id="register" >
+                <h4>sign up a new admin user here!</h4>
+                <Register/>
             </div>
 
 {

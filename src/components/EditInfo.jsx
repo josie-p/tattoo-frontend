@@ -38,7 +38,7 @@ return(
 
         <div id="your-info" >
             {/* <h3>username:</h3> */}
-            <p> hi { username }!</p>
+            <p > hi { username }!</p>
         </div>
 
 
