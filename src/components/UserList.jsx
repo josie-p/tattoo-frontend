@@ -4,7 +4,23 @@ import { UserCard } from "./";
 const UserList = ({ allUsers, token }) => {
     return(
         <div>
-            <p>user list!</p>
+            <button onClick={() => {
+                const usersList = document.getElementById("users-list");
+                // const displayStat = document.getElementById("users-list").style;
+
+                if(document.getElementById("users-list").style.display === "none"){
+                    console.log("display is none", document.getElementById("users-list").style.display);
+                    // usersList.style.display = "flex";
+                    document.getElementById("users-list").style.display = "flex"
+                    console.log("changed display to flex");
+                }else{
+                    console.log("display is flex", document.getElementById("users-list").style.display);
+                    // usersList.style.display = "none";
+                    document.getElementById("users-list").style.display = "none";
+                console.log("changed to none");                }
+
+            }} >manage admin users!</button>
+            <div id="users-list" >
                 {
                     allUsers.map((user, idx) => {
                         return(
@@ -14,6 +30,7 @@ const UserList = ({ allUsers, token }) => {
                         )
                     })
                 }
+                </div>
         </div>
     )
 }

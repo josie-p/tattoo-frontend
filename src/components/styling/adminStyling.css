@@ -290,5 +290,8 @@ dark blue - #3845AD
     border-bottom: 3px dashed #F65035;
 }
 
-
+/* init styling for user list */
+#users-list{
+    display: none;
+}
 
