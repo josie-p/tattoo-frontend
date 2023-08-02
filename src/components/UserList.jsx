@@ -2,27 +2,31 @@ import React from "react";
 import { UserCard } from "./";
 
 const UserList = ({ allUsers, token }) => {
+
+   const userList = allUsers.filter((user, idx) => {
+      if( user.username === "joann-w" || user.username === "josie-p"){
+        return false;
+      }else{
+        return true;
+      }
+   })
+
     return(
-        <div>
-            <button onClick={() => {
-                const usersList = document.getElementById("users-list");
-                // const displayStat = document.getElementById("users-list").style;
+        <div id="users-page">
+            <h4>manage admin users here!</h4>
+            <button id="manage-users" onClick={() => {
 
-                if(document.getElementById("users-list").style.display === "none"){
-                    console.log("display is none", document.getElementById("users-list").style.display);
-                    // usersList.style.display = "flex";
-                    document.getElementById("users-list").style.display = "flex"
-                    console.log("changed display to flex");
-                }else{
-                    console.log("display is flex", document.getElementById("users-list").style.display);
-                    // usersList.style.display = "none";
+                if(document.getElementById("users-list").style.display === "flex"){
+                    
                     document.getElementById("users-list").style.display = "none";
-                console.log("changed to none");                }
+                }else{
+                    document.getElementById("users-list").style.display = "flex";      
+                        }
 
-            }} >manage admin users!</button>
+            }} >manage admin users</button>
             <div id="users-list" >
                 {
-                    allUsers.map((user, idx) => {
+                    userList.map((user, idx) => {
                         return(
                             <div className="user-in-list" key={ `${idx} - user list map` } >
                                 <UserCard token={ token } user={ user }  />

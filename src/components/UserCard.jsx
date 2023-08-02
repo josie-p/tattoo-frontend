@@ -17,22 +17,12 @@ const UserCard = ({ user, token }) => {
     }
 
     return(
-        <div id={`user${user.id}`}>
-            <h3>username</h3>
-            <p>{ user.username }</p>
-            {/* <h3>
-                password
-            </h3>
-<p>{ user.password } </p> */}
+        <div className="user-card" id={`user${user.id}`}>
+            {/* <h3>username</h3> */}
+            <h3>user: <span className="card-username" >{ user.username }</span></h3>
+          
 <button onClick={() => {
-    // if(localStorage.getItem("username") === "joann-w") {
-    //     if(confirm("are you sure you wanna delete?")){
-    //         deleteUser();
-    //     }
-    // }else{
-    //     alert("you are not permitted to perform this action");
-    // }
-
+   
    
         if(confirm("are you sure you wanna delete?")){
             deleteUser();
