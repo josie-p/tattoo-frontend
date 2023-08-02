@@ -23,7 +23,12 @@ const MyWork = () => {
 
     return(
         <div id="my-work-page">
-            <h2>my work!</h2>
+            <div id="title-my-work">
+
+            <h2>check out my work!</h2>
+            </div>
+
+            <div id="images" >
 
             {
                 imageList.map((url, idx) => {
@@ -33,7 +38,7 @@ const MyWork = () => {
                     */
                   <div key={`the key for the img map is at idx ${idx}`}> 
 
-                <img className="my-work-img"  src={url} onClick={() => {
+                <img className="my-work-img"  src={url} alt="photo of a tattoo by Joann Woods" onClick={() => {
                     document.getElementById(`myModal${idx}`).style.display = "block";
                 }}  />
 
@@ -43,13 +48,14 @@ const MyWork = () => {
                         <span className="close" onClick={() => {
                             document.getElementById(`myModal${idx}`).style.display = "none";
                         }}  >&times;</span>
-                        <img className="my-work-img-modal" src={url} />
+                        <img className="my-work-img-modal" src={url} alt="photo of a tattoo by Joann Woods" />
                         </div>
                   </div>
                     </div>
                     )
                 })
             }
+            </div>
         </div>
     )
 }

@@ -8,7 +8,7 @@ const Admin = ({ username, token, allUsers }) => {
         <div id="admin-page" >
 
             <div id="open-admin" >
-            { username ? <h2 id="admin-welcome" >welcome back, <span id="greeting-username" >{username}</span>!</h2> : null }
+            { username ? <h2 id="admin-welcome" >hi <span id="greeting-username" >{username}</span>!</h2> : null }
                 <Link id="your-account" to="edit-my-info">your account!!</Link>
             </div>
             
@@ -27,14 +27,6 @@ const Admin = ({ username, token, allUsers }) => {
     <UserList allUsers={ allUsers } token={token} />
 </div> : null
 }
-            {/* // <div>
-            //     <UserList allUsers={ allUsers } token={token} />
-            // </div> */}
-
-            {/* <div id="edit-info">
-                <h4>edit your information</h4>
-                <EditInfo token={ token } />
-            </div> */}
         </div>
     )
 }
