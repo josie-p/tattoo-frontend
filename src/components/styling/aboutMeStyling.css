@@ -1,10 +1,39 @@
+/*
+
+color palette:
+off-white - #f7f0df
+dark blush - #EA9688
+light pink - #F9CDCC
+orange - #F65035
+dark green - #27513E
+light green - #C2F1DC
+yellow - #FFCD64
+light blue - #868FD6
+lighter blue - #d9ddfd
+dark blue - #3845AD
+
+*/
+
 #about-me{
-    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    background-color: #d9ddfd;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
 }
 
 #about-me-jo-pic{
-    border: dashed 4px pink;
-    border-radius: 35px;
-   /* margin: auto auto; */
+   margin: auto;
+   object-fit: contain;
 }
+
+#container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+}
+
+
+

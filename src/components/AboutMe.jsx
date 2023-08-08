@@ -1,13 +1,14 @@
 import React from "react";
-import joPic from "./images/about-me-pic.png";
+import joPic from "./images/headshot-1.JPEG";
 
 const AboutMe = () => {
   return (
     <div id="about-me">
       <h2>about me!</h2>
-      {/* <img id="about-me-jo-pic" src={joPic} alt="picture of jo" height="350px" width="350px" /> */}
-
-      <p>
+      <img id="about-me-jo-pic" src={joPic} alt="picture of jo" height="350px" width="350px" />
+      <div id="container" >
+<div id="col1" >
+<p>
         Shaman banjo farm-to-table, mustache tumblr bespoke bodega boys bicycle
         rights mixtape. Voluptate JOMO dolore, edison bulb chillwave activated
         charcoal man bun cronut gastropub blackbird spyplane consectetur. Fixie
@@ -18,7 +19,11 @@ const AboutMe = () => {
         kogi aliquip cold-pressed retro. Street art tonx pabst irure, stumptown
         next level in umami normcore raclette thundercats occaecat.
       </p>
-      <p>
+
+</div>
+
+    <div id="col2" >
+    <p>
         Palo santo organic elit, craft beer asymmetrical whatever activated
         charcoal ramps nulla jianbing chambray yes plz venmo. Blog cray fugiat,
         activated charcoal selfies tote bag consequat man bun nulla jawn tacos
@@ -33,6 +38,10 @@ const AboutMe = () => {
         chic migas incididunt shoreditch VHS squid vexillologist franzen. Sus
         art party echo park, mixtape laborum mumblecore mustache shaman.
       </p>
+
+    </div>
+    </div>
+   
     </div>
   );
 };

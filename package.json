@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "2": "^3.0.0",
     "firebase": "^9.22.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

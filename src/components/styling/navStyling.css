@@ -37,8 +37,9 @@ dark blue - #3845AD
   transition-duration: 0.3s;
   /* color: #F65035; */
   /* color: #868FD6; */
+  color: #4051d5;
   border-bottom: solid 3px #F65035;
-  text-shadow: 2px 2px 4px #ea9688;
+  /* text-shadow: 2px 2px 4px #ea9688; */
 }
 
 /* #navbar > a:focus{

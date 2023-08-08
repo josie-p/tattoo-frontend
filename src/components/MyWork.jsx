@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { storage } from "../firebase";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
 
+import mwTest from "./styling/mwTest.css";
+
 const MyWork = () => {
 
     // const [ imageUpload, setImageUpload ] = useState([]);
@@ -33,12 +35,13 @@ const MyWork = () => {
             {
                 imageList.map((url, idx) => {
                   return (  
-                    /*
-                    -onclick of the image, a class is added 
-                    */
                   <div key={`the key for the img map is at idx ${idx}`}> 
 
-                <img className="my-work-img"  src={url} alt="photo of a tattoo by Joann Woods" onClick={() => {
+                {/* <img className="my-work-img"  src={url} alt="photo of a tattoo by Joann Woods" onClick={() => {
+                    document.getElementById(`myModal${idx}`).style.display = "block";
+                }}  /> */}
+
+                <img className={idx === 0 || idx === 7 ? "my-work-img change-grid-img" : "my-work-img"}  src={url} alt="photo of a tattoo by Joann Woods" onClick={() => {
                     document.getElementById(`myModal${idx}`).style.display = "block";
                 }}  />
 
