@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { Navbar, Home, AboutMe, MyWork, Contact, Login, Admin, Register, EditInfo, LightboxTest } from "./";
 import { getAllUsersAPI } from "./api-adapter";
 
-import myWorkStyling from "./styling/myWorkStyling.css";
+// import myWorkStyling from "./styling/myWorkStyling.css";
 import aboutMeStyling from "./styling/aboutMeStyling.css";
 import homeStyling from "./styling/homeStyling.css";
 
