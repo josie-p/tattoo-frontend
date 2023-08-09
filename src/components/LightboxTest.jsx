@@ -6,7 +6,9 @@ import { ref, listAll, getDownloadURL } from "firebase/storage";
 import { Lightbox } from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-// import PhotoAlbum from "react-photo-album";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+
 
 
 const LightboxTest = () => {
@@ -15,8 +17,10 @@ const LightboxTest = () => {
 
     const imageListRef = ref(storage, "images/");
 
-    // const [open, setOpen] = React.useState(false);
-    const [ slideIdx, setIndex ] = React.useState(-1);
+
+    const [slides, setSlides] = useState([]);
+
+    const [ slideIdx, setSlideIndex ] = React.useState(-1);
 
     useEffect(() => {
         listAll(imageListRef).then((response) => {
@@ -29,6 +33,18 @@ const LightboxTest = () => {
         })
     }, [])
 
+    useEffect(() => {
+        console.log("images set!");
+
+      
+            const newSlides = imageList.map(url => ({ src: url }));
+            setSlides(newSlides);
+
+       
+
+        console.log(slides, "slides array");
+    }, [imageList]);
+
     return(
         <div>
             lightbox test
@@ -39,7 +55,7 @@ const LightboxTest = () => {
                 
                 imageList.map((url, idx) => {
                     return <img key={`the key for the img map is at idx ${idx}`}  src={url} alt="photo of a tattoo by Joann Woods" height="250px" width="250px" 
-                    onClick={() => setIndex(idx)}
+                    onClick={() => setSlideIndex(idx)}
                     />
                 })
 
@@ -47,9 +63,10 @@ const LightboxTest = () => {
 
                 <Lightbox 
                 index={slideIdx}
-                slides={imageList}
+                slides={slides}
+                plugins={[Thumbnails]}
                 open={slideIdx >= 0}
-                close={() => setIndex(-1)}
+                close={() => setSlideIndex(-1)}
                 />
 
 
