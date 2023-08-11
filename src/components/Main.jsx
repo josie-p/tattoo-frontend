@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Navbar, Home, AboutMe, MyWork, Contact, Login, Admin, Register, EditInfo, LightboxTest } from "./";
+import { Navbar, Home, AboutMe, MyWork, Contact, Login, Admin, Register, EditInfo, LightboxTest, Footer } from "./";
 import { getAllUsersAPI } from "./api-adapter";
 
 // import myWorkStyling from "./styling/myWorkStyling.css";
@@ -42,6 +42,7 @@ const Main = () => {
             <Route exact path="admin/edit-my-info" element={< EditInfo token={ token } username={ username } />} />
             <Route exact path="lightbox-test" element={ <LightboxTest/> } />
         </Routes>
+        <Footer/>
         </div>
     )
 }

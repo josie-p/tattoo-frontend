@@ -22,7 +22,7 @@ dark blue - #3845AD
   margin: 10px;
   font-weight: 600;
   font-family: "Sen", sans-serif;
-  text-shadow: 2px 2px 2px #f9cdcc;
+  /* text-shadow: 2px 2px 2px #f9cdcc; */
   font-size: 1.2rem;
   transition: ease-in;
   transition-duration: 0.3s;

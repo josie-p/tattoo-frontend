@@ -17,6 +17,7 @@ dark blue - #3845AD
 #about-me{
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #d9ddfd;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -25,7 +26,10 @@ dark blue - #3845AD
 
 #about-me-jo-pic{
    margin: auto;
-   object-fit: contain;
+   object-fit: cover;
+   border-top: solid 2px #3845AD;
+   border-radius: 50%;
+
 }
 
 #container{

@@ -49,14 +49,14 @@ const MyWork = () => {
         <div id="my-work-div">
 
             <h2>check out my work!</h2>
-
-                <h2>all the photos</h2>
+            
             <div id="images">
                 { 
                 
                 imageList.map((url, idx) => {
+
                     return <img
-                    className={ idx === 0 || idx === 7 || idx === 10 || idx === 17 ? "img-grid-diff" : null }
+                    // className={ idx === 0 || idx === 7 || idx === 10 || idx === 17 ? "img-grid-diff" : null }
                     key={`the key for the img map is at idx ${idx}`}  src={url} alt="photo of a tattoo by Joann Woods"  
                     onClick={() => setSlideIndex(idx)}
                     />

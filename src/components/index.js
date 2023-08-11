@@ -3,6 +3,7 @@ export { default as AddPhotos } from "./AddPhotos";
 export { default as Admin } from "./Admin";
 export { default as Contact } from "./Contact";
 export { default as EditInfo } from "./EditInfo";
+export { default as Footer } from "./Footer";
 export { default as Home } from "./Home";
 export { default as LightboxTest } from "./LightboxTest";
 export { default as Login } from "./Login";

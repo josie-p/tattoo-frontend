@@ -20,6 +20,13 @@ dark blue - #3845AD
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #d9ddfd;
+}
+
+#my-work-div > h2{
+    font-family: 'Sen', sans-serif;
+    color: #3845AD;
+    border-bottom: solid 3px #F65035;
 }
 
 /* image grid styling */
@@ -45,7 +52,7 @@ dark blue - #3845AD
     object-fit: cover;
 }
 
-.img-grid-diff{
+#images > img:nth-of-type(2){
     grid-column: span 2;
     grid-row: span 2;
 }
