@@ -1,11 +1,11 @@
 import React from "react";
-import joPic from "./images/headshot-w-background.png";
+import joPic from "./images/headshot-2.JPEG";
 
 const AboutMe = () => {
   return (
     <div id="about-me">
       <h2>hi! i'm joann!</h2>
-      <img id="about-me-jo-pic" src={joPic} alt="picture of jo" height="600px" width="600px" />
+      <img id="about-me-jo-pic" src={joPic} alt="picture of jo" height="500px" width="500px" />
       <div id="container" >
 <div id="col1" >
 <p>

@@ -8,7 +8,8 @@ const Home = () => {
             <img id="home-logo" src={logo} height="600px" width="650px" alt="logo with a tattoo machine and text that says 'Joann Woods Ink'" />
 
             <div id="home-h3">
-                <h3>tattoo apprentice based in norman, ok!</h3>
+                <h3>tattoo apprentice based in norman, ok</h3>
+                {/* <h3>TATTOO APPRENTICE BASED IN NORMAN, OK</h3> */}
             </div>
         </div>
     )
