@@ -81,7 +81,7 @@ dark blue - #3845AD
 #about-col{
     justify-content: flex-start;
     position: relative;
-    top: -305px;
+    top: -250px;
     /* border: solid 3px #F65035; */
 
 }
@@ -98,11 +98,11 @@ dark blue - #3845AD
 
 #jo-pic{
     width: 400px;
-    height: 600px;
-    object-fit: cover;
+    height: 440px;
+    object-fit: contain;
     position: relative;
-    top: -600px;
-    right: -85px;
+    top: -640px;
+    right: -120px;
     z-index: 10;
 }
 
@@ -127,16 +127,16 @@ dark blue - #3845AD
 
 #about-col-content{
     width: 50%;
-    /* border: 3px dashed #F65035; */
-    padding: 0.5rem;
+    padding: 1rem;
     font-family: 'Sen', sans-serif;
+    border-left: solid 1px #3845AD;
 
 }
 
 #about-col-content > h1{
     font-weight: 600;
     animation: jackInTheBox;
-    animation-duration: 2s;
+    animation-duration: 3s;
     color: #3845AD;
     border-bottom: dashed 3px #F65035;
 }

@@ -6,6 +6,7 @@ export { default as EditInfo } from "./EditInfo";
 export { default as Footer } from "./Footer";
 export { default as Home } from "./Home";
 export { default as LightboxTest } from "./LightboxTest";
+export { default as Loading } from "./Loading";
 export { default as Login } from "./Login";
 export { default as Main } from "./Main";
 export { default as MyWork } from "./MyWork";

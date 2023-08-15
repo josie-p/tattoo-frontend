@@ -3,4 +3,7 @@ footer{
     margin: 0;
     padding: 3rem;
     border-top: 1px solid #3845AD;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
