@@ -39,130 +39,132 @@ dark blue - #3845AD
     width: 50%;
 } */
 
-
 /* #big-about{
     display: flex;
     flex-direction: column;
     align-items: center;
 } */
 
-#contact{
-    display: flex;
-    flex-direction: row;
+#contact {
+  display: flex;
+  flex-direction: row;
 }
 
-#about-page{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    /* padding-bottom: 8rem; */
-    background-color: #3845AD;
+#about-page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /* padding-bottom: 8rem; */
+  background-color: #3845ad;
 }
 
-#about-container{
-    display: flex;
-    align-items: center;
-    /* flex-direction: column; */
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
+#home-about{
+    height: 100vh;
+    width: 100vw;
 }
 
-#pic-col, #about-col{
-    display: flex;
-    flex-direction: column;
-    /* border: solid #F65035 3px; */
-    align-items: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    /* margin: 1rem; */
+#about-container {
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
-#about-col{
-    justify-content: flex-start;
-    position: relative;
-    top: -250px;
-    /* border: solid 3px #F65035; */
+#pic-col,
+#about-col {
+  display: flex;
+  flex-direction: column;
+  /* border: solid #F65035 3px; */
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  /* margin: 1rem; */
+}
 
+#about-col {
+  justify-content: flex-start;
+  position: relative;
+  top: -250px;
+  /* border: solid 3px #F65035; */
 }
 
 /* #about-col{
     flex-grow: 3;
 } */
 
-#pic-col{
-    width: 40%;
-    margin-right: 2rem;
-    align-self: center;
-    animation: slideInLeft;
-    animation-duration: 2s;
+#pic-col {
+  width: 40%;
+  margin-right: 2rem;
+  align-self: center;
+  animation: slideInLeft;
+  animation-duration: 2s;
 }
 
-#jo-pic{
-    width: 400px;
-    height: 440px;
-    object-fit: contain;
-    position: relative;
-    top: -640px;
-    right: -120px;
-    z-index: 10;
+#jo-pic {
+  width: 400px;
+  height: 440px;
+  object-fit: contain;
+  position: relative;
+  top: -665px;
+  right: -150px;
+  z-index: 10;
 }
 
-#name-title{
-    z-index: auto;
-    font-size: 7rem;
-    text-align: center;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 20px;
-    text-shadow: 3px 3px 4px  #F65035;
-    color: #d9ddfd;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 50%;
-    align-items: center;
+#name-title {
+  z-index: auto;
+  font-size: 10rem;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 20px;
+  text-shadow: 3px 3px 4px #f65035;
+  color: #d9ddfd;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  align-items: center;
 }
 
-#about-col{
-    width: 50%;
-    animation: slideInRight;
-   animation-duration: 2s;
+#about-col {
+  width: 50%;
+  animation: slideInRight;
+  animation-duration: 2s;
 }
 
-#about-col-content{
-    width: 50%;
-    padding: 1rem;
-    font-family: 'Sen', sans-serif;
-    border-left: solid 1px #d9ddfd;
-
+#about-col-content {
+  width: 50%;
+  padding: 1rem;
+  font-family: "Sen", sans-serif;
+  border-left: solid 1px #d9ddfd;
 }
 
-#about-col-content > h1{
-    font-weight: 600;
-    animation: bounce;
-    animation-duration: 2s;
-    color: #d9ddfd;
-    border-bottom: dashed 3px #F65035;
-    /* padding-bottom: 5px; */
-    margin-bottom: 10px;
+#about-col-content > h1 {
+  font-weight: 600;
+  animation: bounce;
+  animation-duration: 2s;
+  color: #d9ddfd;
+  border-bottom: dashed 3px #f65035;
+  /* padding-bottom: 5px; */
+  margin-bottom: 10px;
 }
 
-#about-col-content > p{
-    /* font-size: 0.5rem; */
-    font-size: 18px;
-    font-weight: 500;
-    color: #d9ddfd;
+#about-col-content > p {
+  /* font-size: 0.5rem; */
+  font-size: 18px;
+  font-weight: 500;
+  color: #d9ddfd;
 }
 
-
-.spacer{
-    aspect-ratio: 960/300;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.spacer {
+  aspect-ratio: 960/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.layer1{
-    background-image: url('/src/components/images/layered-waves-haikei.svg');
+.layer1 {
+  background-image: url("/src/components/images/layered-waves-haikei-200.svg");
 }

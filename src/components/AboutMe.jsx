@@ -2,7 +2,7 @@ import React from "react";
 
 import aboutMeStyling from "./styling/aboutMeStyling.css";
 
-import joPic from "./images/cutout.png";
+import joPic from "./images/jo-cutout-2.png";
 
 const NewAbout = () => {
   return (

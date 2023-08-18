@@ -36,4 +36,5 @@ dark blue - #3845AD
     text-align: center;
     font-family: 'Sen', sans-serif;
     top: -50px;
+    border-bottom: 3px dashed #F65035;
 }
