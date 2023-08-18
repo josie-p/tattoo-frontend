@@ -14,33 +14,26 @@ dark blue - #3845AD
 
 */
 
-/* #home-page{
+#home-hero{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #d9ddfd;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
-    margin: 0;
+    background-color: #d9ddfd;
+    color: #3845AD;
+}
+
+#home-logo{
+    height: 550px;
+    width: 600px;
+    object-fit: cover;
 }
 
 #home-h3{
-    font-family: 'Sen', sans-serif;
-    color: #3845AD;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    border-bottom: 3px dashed #F65035;
-} */
-
-#home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-}
-
-
-#home-hero, #home-about, #home-contact{
     position: relative;
+    text-align: center;
+    font-family: 'Sen', sans-serif;
+    top: -50px;
 }

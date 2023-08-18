@@ -11,6 +11,8 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 
 import mwTest from "./styling/mwTest.css";
 
+import Loading from "./Loading";
+
 const MyWork = () => {
 
     const [ imageList, setImageList ] = useState([]);
@@ -50,6 +52,10 @@ const MyWork = () => {
 
             <h2>check out my work!</h2>
             
+            { 
+            
+            imageList?.length ? 
+
             <div id="images">
                 { 
                 
@@ -74,7 +80,12 @@ const MyWork = () => {
 
 
 
-            </div>
+            </div> :
+
+            <Loading/>
+            
+            }
+
         </div>
     )
 }

@@ -56,7 +56,7 @@ dark blue - #3845AD
     height: 100%;
     margin: 0;
     /* padding-bottom: 8rem; */
-    background-color: #d9ddfd;
+    background-color: #3845AD;
 }
 
 #about-container{
@@ -94,6 +94,8 @@ dark blue - #3845AD
     width: 40%;
     margin-right: 2rem;
     align-self: center;
+    animation: slideInLeft;
+    animation-duration: 2s;
 }
 
 #jo-pic{
@@ -113,7 +115,7 @@ dark blue - #3845AD
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 20px;
     text-shadow: 3px 3px 4px  #F65035;
-    color: #3845AD;
+    color: #d9ddfd;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -123,27 +125,44 @@ dark blue - #3845AD
 
 #about-col{
     width: 50%;
+    animation: slideInRight;
+   animation-duration: 2s;
 }
 
 #about-col-content{
     width: 50%;
     padding: 1rem;
     font-family: 'Sen', sans-serif;
-    border-left: solid 1px #3845AD;
+    border-left: solid 1px #d9ddfd;
 
 }
 
 #about-col-content > h1{
     font-weight: 600;
-    animation: jackInTheBox;
-    animation-duration: 3s;
-    color: #3845AD;
+    animation: bounce;
+    animation-duration: 2s;
+    color: #d9ddfd;
     border-bottom: dashed 3px #F65035;
+    /* padding-bottom: 5px; */
+    margin-bottom: 10px;
 }
 
 #about-col-content > p{
     /* font-size: 0.5rem; */
     font-size: 18px;
     font-weight: 500;
-    color: #3845AD;
+    color: #d9ddfd;
+}
+
+
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1{
+    background-image: url('/src/components/images/layered-waves-haikei.svg');
 }

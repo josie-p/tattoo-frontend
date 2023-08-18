@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Navbar, Home, AboutMe, MyWork, Contact, Login, Admin, Register, EditInfo, LightboxTest, Footer, NewAbout, Loading } from "./";
+import { Navbar, Home, AboutMe, MyWork, Contact, Login, Admin, Register, EditInfo, LightboxTest, Footer, NewAbout, Loading, NewTest } from "./";
 import { getAllUsersAPI } from "./api-adapter";
 
 // import myWorkStyling from "./styling/myWorkStyling.css";
-import aboutMeStyling from "./styling/aboutMeStyling.css";
-import homeStyling from "./styling/homeStyling.css";
+// import aboutMeStyling from "./styling/aboutMeStyling.css";
+// import homeStyling from "./styling/homeStyling.css";
 import footerStyling from "./styling/footerStyling.css";
 
 
@@ -44,6 +44,7 @@ const Main = () => {
             <Route exact path="lightbox-test" element={ <LightboxTest/> } />
             <Route exact path="about-test" element={<NewAbout/>} />
             <Route exact path="loading" element={<Loading/>} />
+            <Route exact path="/test-home" element={<NewTest/>} />
         </Routes>
         <Footer/>
         </div>

@@ -1,12 +1,29 @@
 import React from "react";
-
-import aboutMeStyling from "./styling/aboutMeStyling.css";
-
+import logo from "./images/clear-logo.png";
 import joPic from "./images/cutout.png";
+import insta from "./images/insta.png"
 
-const NewAbout = () => {
+import homeHeroStyling from "./styling/homeHeroStyling.css"
+
+
+const NewTest = () => {
   return (
-    
+    <div id="home">
+    <section id="home-hero">
+      <div>
+        <img
+          id="home-logo"
+          src={logo}
+          alt="logo with a tattoo machine and text that says 'Joann Woods Ink'"
+        />
+
+        <div id="home-h3">
+          <h3>tattoo apprentice based in norman, ok</h3>
+        </div>
+      </div>
+    </section>
+<div className="spacer layer1"></div>
+    <section id="home-about">
     <div id="about-page">
       <div id="about-container">
         <div id="pic-col">
@@ -39,7 +56,18 @@ const NewAbout = () => {
 
       </div>
     </div>
+    </section>
+
+    <section id="home-contact" >
+    <div>
+            <h2>contact me page!</h2>
+            <p>if you have any questions or concerns, you can reach me through <a href="mailto:joann.woods.23@gmail.com?subject=Contact Joann!">email</a></p>
+            <p>to inquire about booking an appointment, dm me through instagram!</p>
+            <a href="https://www.instagram.com/jowoods_ink/?hl=en" target="_blank"><img src={insta} /></a>
+        </div>
+    </section>
+    </div>
   );
 };
 
-export default NewAbout;
+export default NewTest;

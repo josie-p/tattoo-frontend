@@ -24,3 +24,69 @@ dark blue - #3845AD
     height: 100vh;
     background-color: #d9ddfd;
 }
+
+#animation-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+animation: pulse 1500ms cubic-bezier(0.76, 0.09, 0.17, 0.68) infinite;
+}
+
+#loading-title{
+    font-family: 'Sen', sans-serif;
+    position: relative;
+    color: #3845AD;
+    text-shadow: 1px 1px 2px #F65035;
+}
+
+#loading-title::after{
+    content: '';
+    animation: dots 1500ms ease-in-out infinite;
+    position: absolute;
+}
+
+.spinner{
+    /* color: #3845AD; */
+    color: #F65035;
+    animation: spin 1500ms linear infinite;
+}
+
+.circleAnimation{
+    stroke-opacity: 0.6;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100%{
+        opacity: 1;
+    }
+
+    60%{
+        opacity: 0.8;
+    }
+}
+
+@keyframes dots {
+    0%{
+        content: '';
+    }
+
+    33%{
+        content: '.';
+    }
+    66%{
+        content: '..';
+    }
+    100%{
+        content: '...';
+    }
+}
