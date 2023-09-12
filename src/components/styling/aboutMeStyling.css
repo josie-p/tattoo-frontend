@@ -45,6 +45,24 @@ dark blue - #3845AD
     align-items: center;
 } */
 
+@keyframes colorChange{
+  0%{
+    background-color: pink;
+  }
+  25%{
+    background-color: lightblue;
+  }
+  50%{
+    background-color: lightgreen;
+  }
+  100%{
+    background-color: lightseagreen;
+  }
+}
+
+
+
+
 #contact {
   display: flex;
   flex-direction: row;
@@ -60,6 +78,27 @@ dark blue - #3845AD
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.bounce{
+  animation: bounceIn;
+  animation-duration: 2s;
+}
+
+.change-color-test{
+  animation: colorChange;
+  animation-duration: 10s;
+  /* animation-iteration-count: infinite; */
+}
+
+.change-color{
+  animation: colorChange ease-in;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.test-color{
+  background-color: #f65035;
 }
 
 #home-about{
@@ -105,8 +144,8 @@ dark blue - #3845AD
   width: 40%;
   margin-right: 2rem;
   align-self: center;
-  animation: slideInLeft;
-  animation-duration: 2s;
+  /* animation: slideInLeft;
+  animation-duration: 2s; */
 }
 
 #jo-pic {
@@ -132,12 +171,13 @@ dark blue - #3845AD
   flex-wrap: wrap;
   width: 50%;
   align-items: center;
+
 }
 
 #about-col {
   width: 50%;
-  animation: slideInRight;
-  animation-duration: 2s;
+  /* animation: slideInRight;
+  animation-duration: 2s; */
 }
 
 #about-col-content {

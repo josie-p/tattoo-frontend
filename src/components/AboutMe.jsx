@@ -1,17 +1,24 @@
 import React from "react";
 
+import { useInView } from "react-intersection-observer";
+
 import aboutMeStyling from "./styling/aboutMeStyling.css";
 
 import joPic from "./images/jo-cutout-2.png";
 
 const NewAbout = () => {
+
+  const { ref: myRef, inView: changeColorVisible } = useInView();
+  const { ref: bounce, inView: bounceVisible } = useInView();
+
   return (
     
-    <div id="about-page">
+    // <div id="about-page" className={ changeColorVisible ? "change-color" : null }>
+     <div id="about-page" > 
       <div id="about-container">
         <div id="pic-col">
             <div id="name-title" >
-            <h1>JOANN WOODS</h1>
+            <h1 ref={ bounce } className={ bounceVisible ? "bounce" : null }>JOANN WOODS</h1>
             </div>
           <img src={joPic} alt="photo of tattoo artist Joann Woods" id="jo-pic" />
         </div>
