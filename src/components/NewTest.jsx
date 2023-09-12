@@ -13,17 +13,6 @@ const NewTest = () => {
   return (
     <div id="home">
     <section id="home-hero">
-      {/* <div>
-        <img
-          id="home-logo"
-          src={logo}
-          alt="logo with a tattoo machine and text that says 'Joann Woods Ink'"
-        />
-
-        <div id="home-h3">
-          <h3>tattoo apprentice based in norman, ok</h3>
-        </div>
-      </div> */}
       <Home/>
     </section>
 <div className="spacer layer1"></div>

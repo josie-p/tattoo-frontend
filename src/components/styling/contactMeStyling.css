@@ -19,8 +19,36 @@ dark blue - #3845AD
     height: 100vh;
     background-color: #d9ddfd;
     padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #3845AD;
+    font-family: 'Sen', sans-serif;
+    /* justify-content: center; */
 }
 
 .layer2 {
     background-image: url("/src/components/images/layered-waves-haikei-contact-2.svg");
+  }
+
+  #contact-title{
+    font-family: 'Sen', sans-serif;
+    color: #3845AD;
+    align-self: flex-start;
+  }
+
+.link-logo{
+    height: 75px;
+    width: 100px;
+    object-fit: cover;
+  }
+
+  #email{
+    color: #F65035;
+  }
+
+  .material-symbols-outlined{
+    color: #3845AD;
+    height: 75px;
+    width: 100px;
   }
