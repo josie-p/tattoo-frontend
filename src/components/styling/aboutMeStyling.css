@@ -97,6 +97,16 @@ dark blue - #3845AD
   animation-iteration-count: infinite;
 }
 
+.slide-right{
+  animation: backInRight;
+  animation-duration: 2s;
+}
+
+.slide-left{
+  animation: backInLeft;
+  animation-duration: 2s;
+}
+
 .test-color{
   background-color: #f65035;
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Navbar, Home, AboutMe, MyWork, Contact, Login, Admin, Register, EditInfo, LightboxTest, Footer, NewAbout, Loading, NewTest } from "./";
+import { Navbar, Home, AboutMe, MyWork, Contact, Login, Admin, Register, EditInfo, LightboxTest, Footer, NewAbout, Loading, NewTest, TestAbout } from "./";
 import { getAllUsersAPI } from "./api-adapter";
 
 // import myWorkStyling from "./styling/myWorkStyling.css";
@@ -45,6 +45,7 @@ const Main = () => {
             <Route exact path="about-test" element={<NewAbout/>} />
             <Route exact path="loading" element={<Loading/>} />
             <Route exact path="/test-home" element={<NewTest/>} />
+            <Route exact path="/try-about" element={ <TestAbout/> } />
         </Routes>
         <Footer/>
         </div>

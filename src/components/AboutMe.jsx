@@ -11,6 +11,9 @@ const NewAbout = () => {
   const { ref: myRef, inView: changeColorVisible } = useInView();
   const { ref: bounce, inView: bounceVisible } = useInView();
 
+  const { ref: slideRight, inView: aboutVisible } = useInView();
+  const { ref: slideLeft, inView: pictureVisible } = useInView();
+
   return (
     
     // <div id="about-page" className={ changeColorVisible ? "change-color" : null }>
@@ -18,7 +21,7 @@ const NewAbout = () => {
       <div id="about-container">
         <div id="pic-col">
             <div id="name-title" >
-            <h1 ref={ bounce } className={ bounceVisible ? "bounce" : null }>JOANN WOODS</h1>
+            <h1>JOANN WOODS</h1>
             </div>
           <img src={joPic} alt="photo of tattoo artist Joann Woods" id="jo-pic" />
         </div>

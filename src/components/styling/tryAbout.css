@@ -1,0 +1,60 @@
+/*
+
+color palette:
+off-white - #f7f0df
+dark blush - #EA9688
+light pink - #F9CDCC
+orange - #F65035
+dark green - #27513E
+light green - #C2F1DC
+yellow - #FFCD64
+light blue - #868FD6
+lighter blue - #d9ddfd
+dark blue - #3845AD
+
+*/
+
+
+
+#test-about-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* margin: 10px; */
+    
+}
+
+#about-content{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+#about-photo{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#jo-photo{
+    height: 100vh;
+    width: 45vw;
+}
+
+#bg-c{
+    /* background-size: cover; */
+    /* background-color: rgb(217, 221, 253, 0.2); */
+}
+
+
+#photo-container{
+    /* background-color: rgb(217, 221, 253, 0.3); */
+    height: 100vh;
+    width: 45vw;
+    background-image: url("../images/headshot-1.JPEG");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgb(217, 221, 253, 0.2);
+    /* opacity: 0.8; */
+
+}
