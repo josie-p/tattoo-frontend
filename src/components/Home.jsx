@@ -10,7 +10,7 @@ const Home = () => {
 
             <div id="home-h3">
                 <h3>tattoo apprentice based in norman, ok</h3>
-                
+                {/* <h3>TATTOO APPRENTICE BASED IN NORMAN, OK</h3> */}
             </div>
         </div>
     )
