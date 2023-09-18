@@ -32,10 +32,15 @@ dark blue - #3845AD
     background-image: url("/src/components/images/layered-waves-haikei-contact-2.svg");
   }
 
+  .contact-me{
+    color: fuchsia;
+  }
+
   #contact-title{
     font-family: 'Sen', sans-serif;
-    color: #3845AD;
+    /* color: #3845AD; */
     align-self: flex-start;
+    border-bottom: 3px dashed #F65035;
   }
 
 .link-logo{

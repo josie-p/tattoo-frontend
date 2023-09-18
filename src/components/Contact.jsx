@@ -5,6 +5,8 @@ import { useInView } from "react-intersection-observer";
 import ig from "./images/ig.png";
 import fb from "./images/fb.png";
 
+import contactMe from  "./styling/contactMeStyling.css"
+
 const Contact = () => {
   const { ref: changeColor, inView: colorChangeVisible } = useInView();
 
