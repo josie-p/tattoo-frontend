@@ -50,7 +50,7 @@ const MyWork = () => {
     return(
         <div id="my-work-div">
 
-            <h2>check out my work!</h2>
+            <h2>my work</h2>
             
             { 
             

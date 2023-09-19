@@ -24,9 +24,11 @@ dark blue - #3845AD
 }
 
 #my-work-div > h2{
-    font-family: 'Sen', sans-serif;
+    font-family: 'Trochut', sans-serif;
+    font-size: 3rem;
     color: #3845AD;
-    border-bottom: solid 3px #F65035;
+    text-shadow: 2px 2px 3px #F65035;
+    border-bottom: dashed 3px #F65035;
 }
 
 /* image grid styling */

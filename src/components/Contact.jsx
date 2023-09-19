@@ -8,11 +8,12 @@ import fb from "./images/fb.png";
 import contactMe from  "./styling/contactMeStyling.css"
 
 const Contact = () => {
-  const { ref: changeColor, inView: colorChangeVisible } = useInView();
+  const { ref: slideInRight, inView: slideInRightVisible } = useInView();
 
   return (
-    <div>
-      <h2 className="contact-me" id="contact-title">contact me</h2>
+    <div id="contact-content" ref={ slideInRight } className={ slideInRightVisible ? "slide-in-right" : null }>
+      {/* <h2 className="contact-me" id="contact-title">contact me</h2> */}
+      <h2 className="contact-me" id="contact-title">CONTACT ME</h2>
       <p>
         if you have any questions or concerns, you can reach me through{" "}
         <a

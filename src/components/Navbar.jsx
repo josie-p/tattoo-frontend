@@ -12,8 +12,6 @@ const Navbar = ({ loggedIn }) => {
       <img src={logo} width="90px" height="90px" />
       <Link to="/">home</Link>
       <Link to="/my-work">my work</Link>
-      <Link to="/about-me">about me</Link>
-      <Link to="/contact">contact me</Link>
       { loggedIn ? null : <Link to="/admin-login">login</Link> }
       {
        loggedIn ? <Link to="/admin">admin dash</Link> : null

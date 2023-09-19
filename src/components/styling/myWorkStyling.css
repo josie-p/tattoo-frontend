@@ -64,13 +64,15 @@ dark blue - #3845AD
     display: flex;
     width: 100%;
     justify-content: center;
-    font-family: 'Sen', sans-serif;
-    font-weight: 400;
+    font-family: 'Trochut', sans-serif;
+    /* font-weight: 400; */
+    font-size: 3rem;
     color: #3845AD;
     text-decoration: underline #F65035 3px;
-    -webkit-text-decoration-line: underline;
+    /* -webkit-text-decoration-line: underline;
     -webkit-text-decoration-style: solid;
-    -webkit-text-decoration-color: #F65035;
+    -webkit-text-decoration-color: #F65035; */
+    border-bottom: 3px dashed #F65035;
     animation: zoomIn;
     animation-duration: 2s;
 

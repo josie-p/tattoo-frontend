@@ -29,6 +29,8 @@ dark blue - #3845AD
     height: 550px;
     width: 600px;
     object-fit: cover;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 #home-h3{
