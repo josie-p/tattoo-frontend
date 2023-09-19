@@ -1,5 +1,22 @@
+/*
+
+color palette:
+off-white - #f7f0df
+dark blush - #EA9688
+light pink - #F9CDCC
+orange - #F65035
+dark green - #27513E
+light green - #C2F1DC
+yellow - #FFCD64
+light blue - #868FD6
+lighter blue - #d9ddfd
+dark blue - #3845AD
+
+*/
+
 footer{
-    background-color: #d9ddfd;
+    background-color: #3845AD;
+    color: #d9ddfd;
     margin: 0;
     padding: 3rem;
     border-top: 1px solid #3845AD;

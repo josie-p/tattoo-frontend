@@ -10,11 +10,11 @@ const Navbar = ({ loggedIn }) => {
   return (
     <div id="navbar">
       <img src={logo} width="90px" height="90px" />
-      <Link to="/">home</Link>
-      <Link to="/my-work">my work</Link>
-      { loggedIn ? null : <Link to="/admin-login">login</Link> }
+      <Link to="/">HOME</Link>
+      <Link to="/my-work">MY WORK</Link>
+      { loggedIn ? null : <Link to="/admin-login">LOGIN</Link> }
       {
-       loggedIn ? <Link to="/admin">admin dash</Link> : null
+       loggedIn ? <Link to="/admin">ADMIN DASH</Link> : null
       }
       {
         loggedIn ? <p onClick={() => {
@@ -23,7 +23,7 @@ const Navbar = ({ loggedIn }) => {
           localStorage.removeItem("user");
           navigate("/");
           location.reload();
-        }} >logout</p> : null
+        }} >LOGOUT</p> : null
       }
     </div>
   );

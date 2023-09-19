@@ -19,8 +19,8 @@ dark blue - #3845AD
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     background-color: #d9ddfd;
     color: #3845AD;
 }
